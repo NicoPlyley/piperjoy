@@ -29,7 +29,29 @@
         @apply font-script
     }
 
+    h1 {
+        @apply text-6xl text-bear-dark;
+    }
+
     h3 {
         @apply text-4xl text-bear-dark;
+    }
+
+    h4, h5 {
+        @apply font-serif;
+    }
+
+    h5 {
+        @apply text-2xl;
+    }
+
+    p {
+        @apply font-sans text-gray-600;
+    }
+}
+
+@layer components {
+    .container {
+        @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
     }
 }
