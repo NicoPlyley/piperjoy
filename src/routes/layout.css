@@ -1,1 +1,23 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-bear-tan: #cdb9b2;
+    --color-bear-dark: #5d4037;
+    --color-bear-medium: #9f8272;
+    --color-bear-light: #9f8272;
+    --color-bear-cream: #f7eee9;
+    --color-bear-accent: #a1887f;
+}
+
+@layer base {
+    body {
+        background-color: var(--color-bear-cream);
+        background-image: repeating-linear-gradient(
+                90deg,
+                var(--color-bear-cream),
+                var(--color-bear-cream) 40px,  /* Width of the first color stripe */
+                var(--color-bear-tan) 40px,  /* Start of second color */
+                var(--color-bear-tan) 80px   /* End of second color (40px + 40px width) */
+        );
+    }
+}
