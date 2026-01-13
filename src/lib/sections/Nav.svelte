@@ -1,14 +1,13 @@
 <script lang="ts">
 	import { Hamburger } from 'svelte-hamburgers';
 	import { slide } from 'svelte/transition';
+	import { Container } from '$lib/components';
 
 	let mobileMenuOpened = false;
 </script>
 
-<header
-	class="absolute top-0 w-full border-b-4 border-b-bear-medium bg-white px-4 shadow sm:px-6 lg:px-8"
->
-	<div class="@container m-auto flex h-20 max-w-7xl items-center justify-between select-none">
+<header class="absolute top-0 z-10 w-full border-b-4 border-b-bear-medium bg-white shadow">
+	<Container class="@container m-auto flex h-20 max-w-7xl items-center justify-between select-none">
 		<h3>Piper Joy</h3>
 
 		<!-- Links -->
@@ -56,5 +55,5 @@
 				</ul>
 			</nav>
 		</nav>
-	</div>
+	</Container>
 </header>
