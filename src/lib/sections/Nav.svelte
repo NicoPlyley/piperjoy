@@ -6,7 +6,7 @@
 	let mobileMenuOpened = false;
 </script>
 
-<header class="absolute top-0 z-10 w-full border-b-4 border-b-bear-medium bg-white shadow">
+<header class="fixed top-0 z-10 w-full border-b-4 border-b-bear-medium bg-white shadow">
 	<Container class="@container m-auto flex h-20 max-w-7xl items-center justify-between select-none">
 		<h3>Piper Joy</h3>
 
