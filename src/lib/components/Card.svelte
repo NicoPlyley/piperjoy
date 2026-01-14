@@ -16,7 +16,7 @@
 >
 	{#if isAnimated}
 		<div
-			class="absolute -top-5 -right-5 rounded-full border-2 border-white bg-bear-dark px-4 py-2 font-semibold text-white shadow-md"
+			class="absolute -top-5 right-0 animate-bounce rounded-full border-2 border-white bg-bear-dark px-4 py-2 font-semibold text-white shadow-md select-none"
 		>
 			Click Me!
 		</div>
