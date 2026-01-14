@@ -45,7 +45,11 @@
 		{#each details as item (item.id)}
 			<Card isAnimated={item.id === 3}>
 				{#snippet icon()}
-					<item.icon />
+					<div
+						class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-bear-medium bg-bear-cream text-bear-dark"
+					>
+						<item.icon />
+					</div>
 				{/snippet}
 
 				<div class="text-center">
