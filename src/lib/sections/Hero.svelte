@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_PARENTS_NAME } from '$env/static/public';
+	import { PUBLIC_LAST_NAME, PUBLIC_PARENTS_NAME } from '$env/static/public';
 	import { Container } from '$lib/components';
 	import bear from '$lib/assets/bear.webp';
 </script>
@@ -19,7 +19,10 @@
 		<h4 class="tracking-wide text-bear-medium uppercase">We Can bearly Wait</h4>
 		<p class="text-sm tracking-wide uppercase">For the arrival of</p>
 		<h1 class="my-8">Piper Joy</h1>
-		<h4 class="text-bear-medium italic">{PUBLIC_PARENTS_NAME || 'John & Jane Doe'}</h4>
+		<h4 class="text-bear-medium italic">
+			{PUBLIC_PARENTS_NAME || 'John & Jane'}
+			{PUBLIC_LAST_NAME || 'Doe'}
+		</h4>
 	</div>
 
 	<!-- CTA -->
