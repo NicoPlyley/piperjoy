@@ -3,8 +3,6 @@
 	import { PUBLIC_LAST_NAME } from '$env/static/public';
 	import { Card, Container } from '$lib/components';
 
-	// TODO: Add animations and modal
-
 	const details = [
 		{
 			id: 1,
@@ -42,7 +40,7 @@
 	];
 </script>
 
-<Container class="mt-20">
+<Container class="my-20">
 	<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
 		{#each details as item (item.id)}
 			<Card isAnimated={item.id === 3}>
