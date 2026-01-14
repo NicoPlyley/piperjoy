@@ -7,6 +7,6 @@
 
 <Nav />
 
-<div class="mt-36">
+<div class="mt-20">
 	{@render children()}
 </div>
