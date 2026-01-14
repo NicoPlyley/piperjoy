@@ -8,9 +8,18 @@
 	}
 
 	const { icon, children, isAnimated = false }: Props = $props();
+
+	const handleClick = (animated: boolean) => {
+		if (animated) {
+			// TODO: Create modal
+			alert('Card clicked!');
+		}
+	};
 </script>
 
 <div
+	onclick={() => handleClick(isAnimated)}
+	role="none"
 	class="relative flex w-full flex-col items-center rounded-2xl border-b-8 border-b-bear-medium bg-white py-8 shadow-lg {isAnimated &&
 		'cursor-pointer'}"
 >
