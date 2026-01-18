@@ -19,9 +19,7 @@
         background-image: repeating-linear-gradient(
                 90deg,
                 var(--color-bear-cream),
-                var(--color-bear-cream) 40px,  /* Width of the first color stripe */
-                var(--color-bear-tan) 40px,  /* Start of second color */
-                var(--color-bear-tan) 80px   /* End of second color (40px + 40px width) */
+                var(--color-bear-cream) 40px, var(--color-bear-tan) 40px, var(--color-bear-tan) 80px
         );
     }
 
@@ -42,16 +40,32 @@
     }
 
     h5 {
-       @apply text-xl font-bold text-bear-dark
+        @apply text-xl font-bold text-bear-dark
     }
 
     p {
         @apply font-sans text-gray-600;
+    }
+
+    button {
+        @apply cursor-pointer;
     }
 }
 
 @layer components {
     .container {
         @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    }
+
+    label, .label {
+        @apply text-xs font-bold text-gray-500 uppercase mb-1;
+    }
+
+    input {
+        @apply w-full rounded-lg border-gray-300 border shadow-sm focus:border-bear-dark focus:outline-0 py-2 px-3 bg-white;
+    }
+
+    .form-group {
+        @apply mb-4 w-full;
     }
 }
