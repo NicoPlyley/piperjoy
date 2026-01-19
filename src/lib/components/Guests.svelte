@@ -59,7 +59,7 @@
 
 	<!-- Attendance -->
 	<p class="label">Attendance</p>
-	<div class="flex gap-2">
+	<div class="flex flex-col gap-2 @lg:flex-row">
 		<button
 			type="button"
 			onclick={() => handleAttendanceChange(true)}
