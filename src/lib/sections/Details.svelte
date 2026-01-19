@@ -9,7 +9,7 @@
 			icon: Calendar,
 			title: 'When',
 			subtitle: 'Saturday, February 28',
-			info: '2:00 - 5:00 PM',
+			info: '2:00 P.M.',
 			link: {
 				title: 'Add To Calendar',
 				href: '#'
@@ -20,7 +20,7 @@
 			icon: MapPin,
 			title: 'Where',
 			subtitle: `The ${PUBLIC_LAST_NAME} Home`,
-			info: 'Address',
+			info: 'Glendora CA',
 			link: {
 				title: 'Get Directions',
 				href: '#'
