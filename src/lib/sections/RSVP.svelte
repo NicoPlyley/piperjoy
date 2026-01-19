@@ -8,7 +8,7 @@
 	]);
 
 	let isSubmitting = $state(false);
-	let submitted = $state(true);
+	let submitted = $state(false);
 
 	const addGuest = () => {
 		guestInfo.push({
