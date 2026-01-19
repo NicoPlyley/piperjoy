@@ -9,9 +9,7 @@
 		<!-- Heading -->
 		<h3>Gift Registry</h3>
 		<div class="mx-auto my-4 h-1 w-24 rounded-full bg-bear-medium"></div>
-		<p class="mb-12">
-			Your presence is the most precious gift! We have consolidated everything into one list.
-		</p>
+		<p class="mb-12">Your presence is the most precious gift!</p>
 
 		<!-- Card -->
 		<div
