@@ -8,10 +8,16 @@
 
 <Hero />
 
-<Details />
+<div id="details">
+	<Details />
+</div>
 
-<Registry />
+<div id="registry">
+	<Registry />
+</div>
 
-<RSVP />
+<div id="rsvp">
+	<RSVP />
+</div>
 
 <Footer />
