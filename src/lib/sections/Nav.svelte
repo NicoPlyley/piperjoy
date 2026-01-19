@@ -40,7 +40,7 @@
 						<a
 							onclick={() => (mobileMenuOpened = false)}
 							class="block w-full py-14 text-center"
-							href="#rvsp">RSVP</a
+							href="#rsvp">RSVP</a
 						>
 					</li>
 				</ul>
@@ -51,7 +51,7 @@
 				<ul class="flex gap-14">
 					<li><a href="#details">Details</a></li>
 					<li><a href="#registry">Registry</a></li>
-					<li><a class="rounded-full bg-bear-dark px-6 py-2 text-white" href="#rvsp">RSVP</a></li>
+					<li><a class="rounded-full bg-bear-dark px-6 py-2 text-white" href="#rsvp">RSVP</a></li>
 				</ul>
 			</nav>
 		</nav>

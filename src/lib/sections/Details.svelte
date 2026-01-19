@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Baby, Calendar, MapPin } from '@lucide/svelte';
-	import { PUBLIC_LAST_NAME } from '$env/static/public';
+	import { PUBLIC_LAST_NAME, PUBLIC_MAPS_URL } from '$env/static/public';
 	import { Card, Container } from '$lib/components';
 
 	const details = [
@@ -9,10 +9,10 @@
 			icon: Calendar,
 			title: 'When',
 			subtitle: 'Saturday, February 28',
-			info: '2:00 - 5:00 PM',
+			info: '2:00 P.M.',
 			link: {
 				title: 'Add To Calendar',
-				href: '#'
+				href: '/event.ics'
 			}
 		},
 		{
@@ -20,10 +20,10 @@
 			icon: MapPin,
 			title: 'Where',
 			subtitle: `The ${PUBLIC_LAST_NAME} Home`,
-			info: 'Address',
+			info: 'Glendora CA',
 			link: {
 				title: 'Get Directions',
-				href: '#'
+				href: PUBLIC_MAPS_URL
 			}
 		},
 		{
@@ -34,7 +34,7 @@
 			info: 'Bring a pack of Diapers',
 			link: {
 				title: 'View Details',
-				href: '#'
+				href: ''
 			}
 		}
 	];
@@ -56,9 +56,17 @@
 					<h5 class="mt-4">{item.title}</h5>
 					<p class="mt-2 text-lg font-semibold text-bear-medium">{item.subtitle}</p>
 					<p class="text-gray-600">{item.info}</p>
-					<a class="mt-4 block font-bold text-bear-dark underline" href={item.link.href}
-						>{item.link.title}</a
-					>
+					{#if item.link.href !== ''}
+						<a
+							class="mt-4 block font-bold text-bear-dark underline"
+							target="_blank"
+							href={item.link.href || ''}>{item.link.title}</a
+						>
+					{:else}
+						<p class="mt-4 block font-bold text-bear-dark underline" href={item.link.href || ''}>
+							{item.link.title}
+						</p>
+					{/if}
 				</div>
 			</Card>
 		{/each}

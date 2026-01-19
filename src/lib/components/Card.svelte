@@ -31,18 +31,21 @@
 			<div class="flex flex-col items-center p-8">
 				{@render icon()}
 				<h5 class="mt-4 mb-2">Diaper Raffle Details</h5>
-				<p>A pack of diapers</p>
+				<p>We especially love Millie Moon Diapers</p>
 				<div class="mt-8 w-full space-y-4 border border-bear-tan bg-bear-cream/50 p-4">
 					<div class="flex">
-						<Ticket />
-						<span class="pl-1 font-semibold">Entry: &nbsp;</span>
-						<p>Information about the entry</p>
+						<Ticket class="shrink-0 text-2xl" />
+						<span class="mr-2 pl-1 font-semibold">Entry:</span>
+						<p>
+							Each package of diapers will receive one raffle entry. Each $25 spent on items from
+							our registry will receive an additional entry.
+						</p>
 					</div>
 
 					<div class="flex">
 						<Gift />
-						<span class="pl-1 font-semibold">Prize: &nbsp;</span>
-						<p>Information about the prize</p>
+						<span class="mr-2 pl-1 font-semibold">Prize: &nbsp;</span>
+						<p>Polaroid Now+ Instant Camera (with Film)</p>
 					</div>
 				</div>
 			</div>
@@ -53,8 +56,8 @@
 				<button
 					onclick={closeModal}
 					class="cursor-pointer rounded-full border border-bear-medium px-6 py-2 text-bear-dark"
-					>Got It!</button
-				>
+					>Got It!
+				</button>
 			</div>
 		</div>
 	</div>

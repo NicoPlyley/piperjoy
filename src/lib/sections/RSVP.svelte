@@ -100,17 +100,20 @@
 				<p class="text-center text-sm font-bold text-bear-dark uppercase">While you're here...</p>
 
 				<div class="mt-6 flex flex-col space-y-3">
-					<button
+					<a
+						href="/event.ics"
 						class="flex w-full items-center justify-center rounded-lg border border-bear-medium/30 bg-white py-3 text-sm font-bold text-bear-dark shadow-sm transition-colors hover:bg-bear-medium hover:text-white"
 					>
-						<Calendar class="mr-2 text-lg" /> Add to Calendar
-					</button>
+						<Calendar class="mr-2 text-lg" />
+						Add to Calendar
+					</a>
 					<a
 						href={PUBLIC_REGISTRY_URL || 'https://target.com'}
 						target="_blank"
 						class="flex w-full items-center justify-center rounded-lg border border-bear-medium/30 bg-white py-3 text-sm font-bold text-bear-dark shadow-sm transition-colors hover:bg-bear-medium hover:text-white"
 					>
-						<Gift class="mr-2 text-lg" /> Visit Registry
+						<Gift class="mr-2 text-lg" />
+						Visit Registry
 					</a>
 				</div>
 			</div>

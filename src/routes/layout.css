@@ -14,6 +14,16 @@
 }
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    @layer base {
+        [id] {
+            @apply scroll-mt-30;
+        }
+    }
+
     body {
         background-color: var(--color-bear-cream);
         background-image: repeating-linear-gradient(
