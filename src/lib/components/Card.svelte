@@ -44,7 +44,7 @@
 
 					<div class="flex">
 						<Gift />
-						<span class="pl-1 font-semibold">Prize: &nbsp;</span>
+						<span class="mr-2 pl-1 font-semibold">Prize: &nbsp;</span>
 						<p>Polaroid Now+ Instant Camera (with Film)</p>
 					</div>
 				</div>
